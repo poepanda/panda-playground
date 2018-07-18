@@ -16,6 +16,7 @@ export default {
         return 'Default text';
       },
     },
+    id: String,
   },
   data() {
     return {
@@ -25,6 +26,7 @@ export default {
   computed: {
     textTypingClass() {
       return classnames(
+        'text-typing',
         this.class,
       );
     },

@@ -31,7 +31,7 @@ export default {
     autoplay: {
       type: Boolean,
       default() {
-        return true;
+        return false;
       },
     },
   },

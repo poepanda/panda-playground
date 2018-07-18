@@ -2,13 +2,13 @@
   <div class="lab-animated">
     <h1>animated</h1>
     <div class="animated-wrapper">
-      <animated class="img-wrapper" type="bounceInDown">
+      <animated class="img-wrapper" direction="in" in="bounceInDown" out="bounceOutDown">
         <img src="/static/images/birds.jpeg" />
       </animated>
-      <animated class="img-wrapper left" type="slideInUp">
+      <animated class="img-wrapper left" direction="in" in="slideInUp" out="slideOutUp">
         <img src="/static/images/birds.jpeg" />
       </animated>
-      <animated class="img-wrapper right" type="zoomInRight">
+      <animated class="img-wrapper right" direction="in" in="zoomInRight" out="zoomOutRight">
         <img src="/static/images/birds.jpeg" />
       </animated>
     </div>

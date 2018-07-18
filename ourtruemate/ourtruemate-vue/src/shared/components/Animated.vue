@@ -1,29 +1,44 @@
 <template>
-  <div :class="animatedClass">
-    <slot />
-  </div>
+  <transition
+    name="animated-class-transtion"
+    :enter-active-class="enterClass"
+    :leave-active-class="leaveClass"
+    @after-enter="afterEnter">
+    <div :class="innerClass" v-if="started">
+      <slot />
+    </div>
+  </transition>
 </template>
 
 <script>
-import classnames from 'classnames';
-
 export default {
   name: 'animated',
   props: {
-    type: {
+    in: {
       type: String,
       default() {
         return 'bounceIn';
       },
     },
+    out: {
+      type: String,
+      default() {
+        return 'bounceOut';
+      },
+    },
+    started: {
+      type: Boolean,
+      default: () => false,
+    },
+    innerClass: String,
+    afterEnter: Function,
   },
   computed: {
-    animatedClass() {
-      return classnames(
-        'animated',
-        this.type,
-        this.class,
-      );
+    enterClass() {
+      return `animated ${this.in}`;
+    },
+    leaveClass() {
+      return `animated ${this.out}`;
     },
   },
 };

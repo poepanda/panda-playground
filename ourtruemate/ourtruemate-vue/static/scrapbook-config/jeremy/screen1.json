@@ -1,0 +1,105 @@
+{
+  "style": {
+    "background": "url(/static/images/backgrounds/Chevron5.jpg)"
+  },
+  "clickEffect": "",
+  "noOfFrames": 3,
+  "frames": [
+    {
+      "no": 1,
+      "type": "image",
+      "url": "/static/images/sample/girl.jpg",
+      "frameClass": "",
+      "animated": true,
+      "style": {
+        "top": "12px",
+        "left": "12px",
+        "bottom": "12px",
+        "right": "50%",
+        "overflow": "hidden"
+      },
+      "animatedStyle": {
+        "border": "10px solid #ffffff"
+      }
+    },
+    {
+      "no": 1,
+      "type": "text",
+      "id": "Such-a-friend",
+      "text": "Something to tell you, Jeremy!!",
+      "animated": true,
+      "frameClass": "",
+      "style": {
+        "transform": "rotate(-19deg)",
+        "top": "85%",
+        "margin-top": "-96px",
+        "left": "50%",
+        "margin-left": "-96px",
+        "width": "172px",
+        "height": "172px",
+        "font-family": "'Waiting for the Sunrise', cursive",
+        "font-size": "1.3rem",
+        "font-weight": "bold"
+      },
+      "animatedStyle": {
+        "background": "url(/static/images/frames/text1.png)",
+        "background-size": "cover",
+        "padding": "20px"
+      },
+      "innerStyle": {
+        "display": "flex",
+        "justify-content": "center",
+        "align-items": "center"
+      }
+    },
+
+    {
+      "no": 2,
+      "type": "image",
+      "url": "/static/images/sample/nice.jpg",
+      "frameClass": "",
+      "animated": true,
+      "cover": {
+        "url": "/static/images/frames/plane.png",
+        "style": {
+          "left": "-18px",
+          "top": "-8px",
+          "width": "133%"
+        }
+      },
+      "frameStyle": {
+        "height": "40%"
+      },
+      "style": {
+        "top": "12px",
+        "right": "10%",
+        "bottom": "40%",
+        "left": "60%",
+        "transform": "rotate(12deg)",
+        "height": "340px"
+      },
+      "animatedStyle": {
+      }
+    },
+
+    {
+      "no": 3,
+      "type": "image",
+      "url": "/static/images/hochiminh.png",
+      "frameClass": "",
+      "animated": {
+        "in": "fadeInUp",
+        "out": null
+      },
+      "style": {
+        "height": "120px",
+        "bottom": "12px",
+        "right": "10%",
+        "left": "65%"
+      },
+      "animatedStyle": {
+        "border": "8px solid white"
+      }
+    }
+  ]
+}

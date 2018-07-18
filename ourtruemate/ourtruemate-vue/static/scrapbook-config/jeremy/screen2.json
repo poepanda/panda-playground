@@ -1,0 +1,49 @@
+{
+  "style": {
+    "background": "url(/static/images/backgrounds/Chevron5.jpg)"
+  },
+  "clickEffect": "",
+  "frames": [
+    {
+      "type": "image",
+      "url": "/static/images/sample/beach.jpg",
+      "frameClass": "",
+      "animated": true,
+      "style": {
+        "top": "12px",
+        "left": "12px",
+        "bottom": "12px",
+        "right": "50%",
+        "overflow": "hidden"
+      }
+    },
+    {
+      "type": "text",
+      "id": "Such-a-friend",
+      "text": "You're such a friend! Jeremy",
+      "animated": true,
+      "background": "/static/images/sample/beach.jpg",
+      "frameClass": "",
+      "style": {
+        "transform": "rotate(-19deg)",
+        "top": "85%",
+        "margin-top": "-96px",
+        "left": "50%",
+        "margin-left": "-96px",
+        "width": "172px",
+        "height": "172px",
+        "font-family": "'Waiting for the Sunrise', cursive",
+        "font-size": "1.3rem",
+        "font-weight": "bold"
+      },
+      "animatedStyle": {
+        "background": "url(/static/images/frames/text1.png)",
+        "background-size": "cover",
+        "padding": "20px",
+        "display": "flex",
+        "justify-content": "center",
+        "align-items": "center"
+      }
+    }
+  ]
+}
